@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>THE 1 BILLION PIXELS PLUS HOMEPAGE</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-database-compat.js"></script>
+</head>
+<body>
+
+<div id="header">
+    <div class="payment-bar">
+        <span onclick="copy('912221034')">BINANCE UID: 912221034 (COPY)</span>
+        <span onclick="copy('TTapBkTqrDnzHbWzek6wSBUTcJKFmR8Ws6')">USDT (TRC20): TTapB...Ws6 (COPY)</span>
+    </div>
+
+    <div class="main-branding">
+        <p class="tagline">Would you like me</p>
+        <h1 class="canva-title">THE 1 BILLION PIXELS PLUS HOMEPAGE</h1>
+        <p class="price-tag">Fixed 200x200 Slot = $20 USD</p>
+    </div>
+
+    <div class="nav-controls">
+        <input type="number" id="searchSlot" placeholder="Slot # (1-25600)">
+        <button onclick="searchHome()">FIND SLOT</button>
+        <a href="order.html" class="buy-btn">BUY NOW</a>
+    </div>
+</div>
+
+<div id="canvas-container">
+    <canvas id="fireCanvas"></canvas>
+    <canvas id="mainCanvas"></canvas>
+</div>
+
+<div id="info-section">
+    <div class="promo-box">
+        <h3>🚀 EXCLUSIVE PROMOTION OFFER</h3>
+        <p>Send your Video/Photo to our <strong>WhatsApp</strong>. We will post it on 3 Social Media platforms!</p>
+        <p>Your Website Link will be pinned in the comments of our posts.</p>
+        <a href="https://wa.me/8801576940717" class="wa-link">Contact WhatsApp Support</a>
+    </div>
+</div>
+
+<div id="footer">
+    <p>The Million Dollar Homepage © 2005 Alex Tew. All rights reserved.</p>
+    <p>THE 1 BILLION PIXELS PLUS HOMEPAGE. We are not responsible for external content.</p>
+</div>
+
+<script src="script.js"></script>
+<script>
+    function copy(t){ navigator.clipboard.writeText(t).then(()=>alert("Copied to clipboard!")); }
+</script>
+</body>
+</html>
